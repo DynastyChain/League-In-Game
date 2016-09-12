@@ -1,0 +1,12 @@
+<div class="idGetter">
+	<label>Enter Summoner Name</label>
+	<input type='text' ng-model="vm.summonerName">
+	<button ng-click="vm.getSummonerId()">Submit</button>
+	<h2>{{vm.inGameService.summonerId}}</h2>
+</div>
+
+<div class='idGetter' ng-show="vm.inGameService.summonerId">
+	<h2>Show Current Game</h2>
+	<button ng-click="vm.inGameInfo()">Go</button>
+</div>
+
